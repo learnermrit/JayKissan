@@ -1,13 +1,13 @@
 #root {
-  max-width: 1280px;
+  
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0rem;
   text-align: center;
 }
 
 .logo {
   
-  padding: 1.5em;
+  padding: 0.5em;
   will-change: filter;
   font-family: 'Libre Baskerville', serif;
   transition: filter 300ms;
@@ -47,4 +47,14 @@
   background-repeat: repeat-y;
   background-size:0%;
        /*added here*/ }
+/* Header.css */
+
+.headerr {
+  /* Other styles for your header */
+  background-image: url('./assets/headerbg.png');
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+
 
