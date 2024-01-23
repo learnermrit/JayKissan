@@ -23,18 +23,17 @@ function App() {
   const dispatch= useDispatch()
   //by using useEffect we will check that user is logged in or not when app loads
 
-  useEffect(()=>{
+  useEffect(() => {
     authService.getCurrentUser()
-    .then((userData)=>{
-      if(userData){
+    .then((userData) => {
+      if (userData) {
         dispatch(login({userData}))
-      }else{
+      } else {
         dispatch(logout())
-        console.log("logi=out ad")
       }
     })
-    .finally(()=>{setLoading(false)})
-  },[])
+    .finally(() => setLoading(false))
+  }, [])
 
   return !loading? (
     <>
@@ -42,11 +41,9 @@ function App() {
        <div className='min-h-screen flex flex-wrap content-between'>
          <div className='w-full block'>
          <Header/>
-            <main>
-              {/* <Outlet> 
-                
-              </Outlet> */}
-            </main>
+         <main>
+        TODO:  <Outlet />
+        </main>
          <Footer/>
          </div>
        </div>

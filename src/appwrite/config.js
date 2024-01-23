@@ -91,28 +91,43 @@ export class Service {
 
     }
 
-    async getPosts(queries = [Query.equal("status","active")]){
-        //here we are created a variable queries and by default we are seting it
-        // and we want all posts which are in active status
-        // we have to create indexes on which we want to do querry in appwrite
-
-        try{
-            await this.databases.listDocuments(
+    async getPosts(queries = [Query.equal("status", "active")]){
+        try {
+            return await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 queries,
-            );
+                
 
-        }catch(error){
-            console.log("Appwrite Service :: getPosts :: error",error);
-            return false;
+            )
+        } catch (error) {
+            console.log("Appwrite serive :: getPosts :: error", error);
+            return false
         }
-
     }
+
+    // async getPosts(queries = [Query.equal("status","active")]){
+    //     //here we are created a variable queries and by default we are seting it
+    //     // and we want all posts which are in active status
+    //     // we have to create indexes on which we want to do querry in appwrite
+
+    //     try{
+    //         await this.databases.listDocuments(
+    //             conf.appwriteDatabaseId,
+    //             conf.appwriteCollectionId,
+    //             queries,
+    //         );
+
+    //     }catch(error){
+    //         console.log("Appwrite Service :: getPosts :: error",error);
+    //         return false;
+    //     }
+
+    // }
 
     // file upload Services
 
-    async uplaodFile(file){
+    async uploadFile(file){
         try{
             return await this.bucket.createFile(
                 conf.appwriteBucketId,
