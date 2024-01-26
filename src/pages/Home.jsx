@@ -1,6 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import appwriteService from "../appwrite/config";
 import {Container, PostCard} from '../components'
+import TopCard from './homebanner/TopCard';
+import KisaanServices from './homebanner/KisaanServices';
+import Pethiya from './homebanner/Pethiya';
+import PlantAdopter from './homebanner/PlantAdopter';
+import BookMyTree from './homebanner/BookMyTree';
+import CropSuggestion from './homebanner/CropSuggestion';
 
 function Home() {
     const [posts, setPosts] = useState([])
@@ -29,16 +35,28 @@ function Home() {
         )
     }
     return (
-        <div className='w-full py-8'>
-            <Container>
+        <div className='w-full py-8 px-2'>
+
+               
+            <TopCard/>
+            <KisaanServices/>
+            <Pethiya/>
+            <PlantAdopter/>
+            <BookMyTree/>
+            <CropSuggestion/>
+
+
+            {/* <Container>
                 <div className='flex flex-wrap'>
                     {posts.map((post) => (
                         <div key={post.$id} className='p-2 w-1/4'>
                             <PostCard {...post} />
                         </div>
+                        
                     ))}
                 </div>
-            </Container>
+            </Container> */}
+          
         </div>
     )
 }
