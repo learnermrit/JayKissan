@@ -1,14 +1,21 @@
 import React from "react";
-import  { useState} from "react";
+import  { useState,useEffect} from "react";
 
 const CropSuggestion = () => {
 
     const [mapReady, setMapReady] = useState(false);
 
   // Simulate delay for loading Google Maps (replace this with your actual Google Maps loading logic)
-  const handleMapLoad = () => {
-    setMapReady(true);
-  };
+//   const handleMapLoad = () => {
+//     setMapReady(true);
+//   };
+useEffect(() => {
+    const delay = setTimeout(() => {
+      setMapReady(true);
+    }, 6000); // Simulating a 3-second delay for loading Google Maps
+
+    return () => clearTimeout(delay); // Clear the timeout on component unmount
+  }, []);
 
   return (
     <div className="w-full h-400px  flex items-start shadow-lg rounded-lg">
@@ -78,7 +85,7 @@ const CropSuggestion = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Google Maps Embed"
-            onLoad={handleMapLoad}
+            // onLoad={handleMapLoad}
           ></iframe>
         </div>):(
              <img
