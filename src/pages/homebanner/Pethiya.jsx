@@ -25,10 +25,10 @@ function Pethiya() {
 
         
         <div className="p-2 w-1/2 self-baseline">
-        <h1 className="text-4xl font-bold mb-4">Pethiya Bazzar</h1>
+        <h1 className="text-4xl font-bold mb-4">Khet</h1>
         <div className="my-8 px-4">
             <p className="mb-4">
-                At <span className="font-bold">Pethiya Bazzar</span>, we connect urban users with local farmers, offering a diverse range
+                At <span className="font-bold">Khet</span>, we connect urban users with local farmers, offering a diverse range
                 of essential grains and oils. Our E-commerce platform ensures timely delivery of fresh
                 vegetables, fostering a direct impact on farming families. The <span className="font-bold">Jaykissan</span> app guarantees pure
                 products sourced from nearby farmers practicing organic techniques, promoting better healthcare.
@@ -46,7 +46,7 @@ function Pethiya() {
             </div>
 
             <p>
-                Experience the convenience of <span className="font-bold">Pethiya Bazzar</span> - where every purchase promotes
+                Experience the convenience of <span className="font-bold">Khet</span> - where every purchase promotes
                 sustainable, organic farming practices.
             </p>
         </div>

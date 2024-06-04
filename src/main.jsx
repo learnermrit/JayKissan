@@ -13,6 +13,7 @@ import AddPost from "./pages/AddPost";
 import Signup from './pages/Signup'
 import EditPost from "./pages/EditPost";
 
+import SuggestForm from './pages/SuggestForm.jsx'
 import Post from "./pages/Post";
 
 import AllPosts from "./pages/AllPosts";
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
         {
             path: "/post/:slug",
             element: <Post />,
+        },
+        {
+            path: "/suggest-form", // Route for the form page
+            element: <SuggestForm />,
         },
     ],
 },

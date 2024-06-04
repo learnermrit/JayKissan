@@ -77,3 +77,5 @@ can access the methods
           export default authService;
 2) we need to create Client then and then account as all methods in appwrite is on account
 */
+
+
