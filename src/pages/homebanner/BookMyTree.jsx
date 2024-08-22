@@ -30,7 +30,7 @@ function BookMyTree() {
       <div className="p-2 w-1/2 self-baseline">
         <h1 className="text-4xl font-bold mb-4">Book My Tree</h1>
         <div className="my-8 px-4">
-            <h2 className="text-3xl font-bold mb-6 text-green-700">BookMyTree: Harvest Joy with a Click</h2>
+            <h2 className="text-3xl font-bold mb-6 text-green-700">BookMyTree: Harvest Joy with a Click here</h2>
 
             <p className="mb-4 text-lg">
                 Discover the magic of <span className="text-green-500 font-bold">BookMyTree</span>, where you can reserve a tree near your location during the enchanting fruit seasons. It's not just a booking; it's an invitation to experience the joy of nature with your family.
